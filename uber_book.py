@@ -165,7 +165,7 @@ while choice.casefold()=='yes':
                 pdf.ln(line_height)
             pdf.output('uber_bill.pdf')
 
-            fromaddr = "suryavanshibhakti743@gmail.com"
+            fromaddr = "bhakti743@gmail.com"
             toaddr = "bhakti9552@gmail.com"
             msg = MIMEMultipart() 
             msg['From'] = fromaddr 
@@ -186,9 +186,9 @@ while choice.casefold()=='yes':
             msg.attach(p)
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.starttls()
-            s.login("suryavanshibhakti743@gmail.com", "dirglashpvphmvrf")
+            s.login("bhakti743@gmail.com", "dirglashpvphmvrf")
             text = msg.as_string()
-            s.sendmail("suryavanshibhakti743@gmail.com", "bhakti9552@gmail.com", text)
+            s.sendmail("bhakti743@gmail.com", "bhakti9552@gmail.com", text)
             s.quit()
             print(f"Ride booked successfully.total bill of ride including cgst and sgst will be {int(_total_fare)}")
             speak(f"Ride booked successfully.total bill of ride including cgst and sgst will be {int(_total_fare)} \n \
